@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <title>Fayul Resort - Book Now</title>
+    <link rel="stylesheet" href="booknow.css">
+    <!-- <link rel="" type="script" href="/Fayul Resort/BookNow/booknow.js"> -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <!-- sort icons arrows -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+
+    <!-- nav-icons -->
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <!-- icons -->
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha256-pasqAKBDmFT4eHoN2ndd6lN370kFiGUFyTiUHWhU7k8=" crossorigin="anonymous"></script>
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0, maximum-scale=1.0, shrink-to-fit=no, user-scalable=0" />
+</head>
+
+<body>
+    <main>
+        <nav id="navbar">
+            <ul class="menu">
+                <li class="logo"><a href="index.html">Fayul Retreat</a></li>
+                <li class="item item-1">
+                    <a href="#"><span class="material-symbols-outlined">cottage</span>Home</a>
+                </li>
+                <li class="item item-1">
+                    <a href="#rooms1"><span class="material-symbols-outlined">bed</span>Rooms</a>
+                </li>
+                <li class="item item-1">
+                    <a href="#"><span class="material-symbols-outlined">info</span>Hotel info</a>
+                </li>
+                <li class="item item-1">
+                    <a href="#"><span class="material-symbols-outlined">contacts</span>Contat Us</a>
+                </li>
+                <li class="item item-1">
+                    <a href="#"><span class="material-symbols-outlined">linked_services</span>Services</a>
+                </li>
+                <li class="toggle"><span class="bars"></span></li>
+            </ul>
+
+        </nav>
+        <!-- container-->
+        <div class="container">
+            <img id="display-img" src="hotel itself/hotel4.jpg" class="roomImage" alt="Room Image">
+            <img id="logo-img" src="logo.png" alt="logo-img">
+            <!-- Search bar -->
+            <div class="search section">
+                <div class="sectionContainer">
+                    <div class="searchInputs">
+
+                        <div class="align-boxes">
+                            <!-- Check in -->
+                            <div class="singleInput">
+                                <div class="texts">
+                                    <h4>Check in</h4>
+                                    <input type="date" placeholder="DD/MM/YY" value="2024-04-06">
+
+                                </div>
+                            </div>
+
+                            <!-- Check out -->
+                            <div class="singleInput">
+                                <div class="texts">
+                                    <h4>Check out</h4>
+                                    <input type="date" placeholder="DD/MM/YY" value="2024-04-07">
+                                </div>
+                            </div>
+                        </div>
+                        <!-- check availability -->
+                        <button id="rooms1">
+                            <a href="res1.html" style="color: black; text-decoration: none;"> Check Rooms</a>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <section class="room">
+            <div class="rooms">
+                <div class="filter-bar">
+                    <div id="cont">
+                        <span class="material-symbols-outlined">
+                            filter_alt
+                        </span>
+                        <p id="fltr">
+                            Filter by :
+                        </p>
+                    </div>
+                    <ul class="filter-menu">
+                        <li id="item1">Sort Rooms : </li>
+                        <li id="item3">By Name <span class="arrow"></span></li>
+                        <li id="item4">By Price <span class="arrow"></span></li>
+                        <li id="item2">Prices in INR(Rs)</li>
+                        <li id="switch-price">Show Price :
+                        <li id="item5">Per Room Per Night</li>
+                        <!-- <li>Price For Whole Stay</li> -->
+                        </li>
+                    </ul>
+                </div>
+                <div class="room-area">
+                    <div class="listResult">
+                        <!-- room 1 -> Mud Room -->
+                        <div class="searchItem room1">
+                            <img src="mudroom/mudroom1.jpg" alt="room1" class="siImg">
+                            <div class="siDesc">
+                                <h1 class="sititle">Mud Room</h1>
+                                <span class="siDistance">100m from center</span>
+                                <span class="siTaxiOp">Room Availability : 1</span>
+                                <span class="siSubtitle">MudRoom</span>
+                                <span class="siFeatures">"Room Content"</span>
+                                <span class="siCancelOp">
+                                    <img src="tick.svg" alt="">Cancellation Policy</span>
+                                <span class="siCancelOpSubtitle">You can cancel later, so lock in this great price
+                                    today!</span>
+                            </div>
+                            <div class="siDetails">
+                                <div class="siDetailTexts">
+                                    <span class="siPrice">$259</span>
+                                    <span class="siTaxOp">Includes taxes and fees</span>
+                                    <a href="res1.html">
+                                        <button class="siCheckButton">Check Availability</button>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- room 2 -> Hammock -->
+                        <div class="searchItem room2">
+                            <img src="hammock/hammock2.jpg" alt="room1" class="siImg">
+                            <div class="siDesc">
+                                <h1 class="sititle">Hammock</h1>
+                                <span class="siDistance">100m from center</span>
+                                <span class="siTaxiOp">Room Availability : 1</span>
+                                <span class="siSubtitle">MudRoom</span>
+                                <span class="siFeatures">"Room Content"</span>
+                                <span class="siCancelOp">
+                                    <img src="tick.svg" alt="">Cancellation Policy</span>
+                                <span class="siCancelOpSubtitle">You can cancel later, so lock in this great price
+                                    today!</span>
+                            </div>
+                            <div class="siDetails">
+                                <div class="siDetailTexts">
+                                    <span class="siPrice">$130</span>
+                                    <span class="siTaxOp">Includes taxes and fees</span>
+                                    <a href="res1.html">
+                                        <button class="siCheckButton">Check Availability</button>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- room 3 -> Loft room -->
+                        <div class="searchItem room3">
+                            <img src="loft/loft6.jpg" alt="room1" class="siImg">
+                            <div class="siDesc">
+                                <h1 class="sititle">Premium Wooden Room</h1>
+                                <span class="siDistance">100m from center</span>
+                                <span class="siTaxiOp">Room Availability : 1</span>
+                                <span class="siSubtitle">MudRoom</span>
+                                <span class="siFeatures">"Room Content"</span>
+                                <span class="siCancelOp">
+                                    <img src="tick.svg" alt="">Cancellation Policy</span>
+                                <span class="siCancelOpSubtitle">You can cancel later, so lock in this great price
+                                    today!</span>
+                            </div>
+                            <div class="siDetails">
+                                <div class="siDetailTexts">
+                                    <span class="siPrice">$190</span>
+                                    <span class="siTaxOp">Includes taxes and fees</span>
+                                    <a href="res1.html">
+                                        <button class="siCheckButton">Check Availability</button>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="booking-sum">
+                    <h2 class="book-sum">Booking Summary</h2>
+                    <div class="no-roomdiv" id="no_room_selected">
+                        <span class="vres-stripe be-noroom"></span>
+                        <img class="noroom-img"
+                            src="https://live.ipms247.com/booking/templates/resui/img/norooms.png" />
+                        <h3>
+                            No Room(s)<br>
+                            <small>Selected</small>
+                        </h3>
+                        <div id="lookinguser" class="user_alert">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div class="card text-center" id="contentToHide">
+            <div class="card-body">
+                <p class="card-text">We use cookies to give you a better experience on our website.</p>
+                <a id="agreeButton" class="btn btn-primary">I Agree</a>
+            </div>
+        </div>
+    </main>
+    <script src="booknow.js"></script>
+</body>
+
+</html>
